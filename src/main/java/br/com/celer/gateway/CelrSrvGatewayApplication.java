@@ -1,13 +1,17 @@
 package br.com.celer.gateway;
 
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
+
+import static org.springframework.boot.SpringApplication.run;
 
 @SpringBootApplication
+@ConfigurationPropertiesScan
 public class CelrSrvGatewayApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CelrSrvGatewayApplication.class, args);
-	}
 
+
+		run(CelrSrvGatewayApplication.class, args);
+	}
 }
